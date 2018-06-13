@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Welcome to Home Plate</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Reset -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.5/js/uikit-icons.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    </head>
+
+    <body background="assets/images/grassTile.jpg">
+
+        <audio autoplay>
+            <source src="assets/audio/baseball.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="container">
+
+                <div id="logo">
+                    <img src="assets/images/logo_placeholder.jpg" alt="Homeplate" class="uk-animation-scale-up">
+                </div>
+
+            <div id="intro">
+                    <p>Planning a stress free day out at the ballpark can sometimes be challenging.  What’s the weather going to be like? What should I eat before I go? Are there good parking spots near the stadium? Let US help YOU plan your day efficiently so you can spend more time enjoying the things that matter the most….watching your favorite baseball team on a nice summer evening. </p>
+            </div>
+
+            <div class="row">
+                <div class="col-4-sm">
+
+                    <form>
+
+                            <h3>Search for a Game</h3>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">City:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Chicago</option>
+                                <option>Cleveland</option>
+                                <option>Cincinatti</option>
+                                <option>Detroit</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Date</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Sport/Team:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Cubs</option>
+                                <option>White Sox</option>
+                                <option>Indians</option>
+                                <option>Reds</option>
+                                <option>Tigers</option>
+                                </select>
+                            </div>
+
+                    </form>
+
+                </div>
+
+                <div class="col-8-sm">
+
+                    <div id="map">
+                        <img src="assets/images/mapPlaceholder.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p id="foot">Homeplate 2018</p>
+        </footer>
+
+        <script src="assets/javascript/homeplate.js"></script>
+
+    </body>
+
+</html>

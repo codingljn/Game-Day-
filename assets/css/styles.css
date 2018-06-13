@@ -1,0 +1,78 @@
+/* ======= Layout Styles ======= */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    opacity: .8;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    opacity: .8;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+#intro {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+form {
+    margin-left: 20px;
+}
+
+#map {
+    display: block;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: white;
+    border-top: solid 4px #aa9478;
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px 0px 4px 0px;
+    flex-shrink:  0;
+}
+
+
+/* ======= Font Styles ======= */
+
+#foot {
+}
+
+
+
+/* ======= Image Styles ======= */
+
+.uk-animation-scale-up {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* ======= Button Styles ======= */
