@@ -36,7 +36,7 @@ function startMap() {
         center: Latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+    map = new google.maps.Map(document.getElementById("gmap_display"), myOptions);
 }
 
 $(document).ready(function () {
@@ -52,7 +52,7 @@ function clearOverlays() {
     }
 }
 
-// clear poi function
+// clear Poi function
 function clearPoi() {
     if (poi) {
         for (i in poi) {
@@ -91,7 +91,10 @@ function findAddress() {
                 icon: "marker.png"
             });
         } else {
-            alert('Geocode was not successful for the following reason: ' + status);
+            var box = bootbox.alert ("Geocode was not successful for the following reason: " + status);
+            box.find('.modal-content').css({ 'background-color': '#3CB371', 'font-size': '34px', 'line-height':'36px', 'height': '200px','color':'D3D3D3'}); 
+            box.find(".btn-primary").removeClass("btn-primary").addClass("btn-danger");
+            // Modal replaces alert('Geocode was not successful for the following reason: ' + status);
         }
     });
 
@@ -134,15 +137,15 @@ function findPlaces() {
 function createMarkers(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
 
-        // if we have found something - clear map (overlays)
+        // if we find something - clear map (overlays)
         clearOverlays();
 
-        // and create new markers by search result
+        // and create new markers 
         for (var i = 0; i < results.length; i++) {
             createMarker(results[i]);
         }
     } else if (status == google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
-        var box = bootbox.alert ("Hospital Closed Due To Ballgame. Please refer to Manual for Assistance");
+        var box = bootbox.alert ("POI Closed Due To Ballgame. Please refer to Manual for Assistance");
         box.find('.modal-content').css({ 'background-color': '#3CB371', 'font-size': '34px', 'line-height':'36px', 'height': '200px','color':'D3D3D3'}); 
         box.find(".btn-primary").removeClass("btn-primary").addClass("btn-danger");
     }

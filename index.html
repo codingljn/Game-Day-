@@ -55,39 +55,60 @@
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            OUR STORY
+                            Our Purpose
                         </a>
                     </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                         <p>
-                            Planning a stress free day out at the ballpark can sometimes be challenging. What’s the weather going to be like? What should
+                            Planning a stress free day out at the ballpark can sometimes be challenging. What’s the weather going to be like? You won't find out here...we didn't use that API. What should
                             I eat before I go? Are there good parking spots near the stadium? Let US help YOU plan your day
                             efficiently so you can spend more time enjoying the things that matter the most….watching your
                             favorite baseball team on a nice summer evening.</p>
                     </div>
                 </div>
             </div>
-
-            <div cl></div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                            aria-controls="collapseTwo">
-                            FOUNDING MEMBERS
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        <p> The original 5 Guys: Jose Lujan, Chun Wong, Paul Hoffan, Chris Hericks, Roland Shorter </p>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Our Story
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <p>Our team was formed just a couple of weeks ago. We all come from various backgrounds but have
+                                worked countless
+                                <strong>moment.js</strong> hours developing an amazing application that everyone will need to use
+                                at least once in their lifetime </p>
+                        </div>
                     </div>
                 </div>
 
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Founding Members
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p> The original
+                                    <strong>Five Guys</strong>: Jose Lujan, Chun Wong, Paul Hoffan, Chris Hericks, Roland Shorter
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="row">
-                    <div class="col-2-sm">
+                    <div class="col-2-lg">
 
                         <div class="actions">
                             <div>
@@ -125,7 +146,7 @@
                                     <option value="Nationals Park">Washington, D.C. - Nationals Park</option>
                                     <option value="Canal Park Stadium">Akron, OH - Canal Park</option>
                                 </select>
-                                <div id="button2" class="button">Search for Stadium</div>
+                                <div id="button2" class="button">1) Find that Stadium</div>
                                 <div>
                                     <label for="gmap_type">Type:</label>
                                     <select id="gmap_type" class="uk-select">
@@ -140,35 +161,35 @@
 
                                 <input type="hidden" id="lat" name="lat" value="41.4962" />
                                 <input type="hidden" id="lng" name="lng" value="-81.6852" />
-                                <div id="button1" class="button">Find Nearby</div>
+                                <div id="button1" class="button">2) Find Nearby</div>
                             </div>
-
-                            </div>
-                            </div>
-
-            
-
-                        <div class="col-10-sm" class="map">
-
-                            <div id="gmap_canvas"></div>
 
                         </div>
+                    </div>
+
+
+
+                    <div class="col-10-lg" class="map-responsive">
+
+                        <div id="gmap_display"></div>
 
                     </div>
 
                 </div>
 
-                </div>
+            </div>
 
-                </div>
+        </div>
 
-                <footer>
-                        <p id="foot">Homeplate 2018</p>
-                    </footer>
+    </div>
 
-               
+    <footer>
+        &copy;Homeplate 2018
+    </footer>
 
-                <script src="assets/javascript/homeplate.js"></script>
+
+
+    <script src="assets/javascript/homeplate.js"></script>
 
 </body>
 
