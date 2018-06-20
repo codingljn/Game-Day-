@@ -114,6 +114,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="dateContainer">
+                        <p>Date:
+                            <input type="text" id="datepicker">
+                        </p>
+                    </div>
+                
+                    <div class="container">
+                        <h3>
+                            <b>Games Schedule</b>
+                        </h3>
+                        <div class="schedule">
+                            <table class="table table-striped text-center" id="scheduleTable">
+                                <thead>
+                                    <tbody class="gameInformation" id = "tableInfo">
+                                        <tr>
+                                            <th id = "gameDates" scope="col">Date</th>
+                                            <th id = "gameTimes" scope="col">Time</th>
+                                            <th scope="col">Away Team</th>
+                                            <th scope="col">Home Team</th>
+                                            <th scope="col">Venue</th>
+                                        </tr>
+                                    </tbody>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
 
                 <div class="row">
                     <div class="col-2-lg">
@@ -175,35 +201,7 @@
                         </div>
                     </div>
 
-
-
                     <div class="col-10-lg" class="map-responsive">
-                        <div class="dateContainer">
-                            <p>Date:
-                                <input type="text" id="datepicker">
-                            </p>
-                        </div>
-                    
-                        <div class="container">
-                            <h3>
-                                <b>Games Schedule</b>
-                            </h3>
-                            <div class="schedule">
-                                <table class="table table-striped" id="scheduleTable">
-                                    <thead>
-                                        <tbody class="gameInformation" id = "tableInfo">
-                                            <tr>
-                                                <th id = "gameDates" scope="col">Date</th>
-                                                <th id = "gameTimes" scope="col">Time</th>
-                                                <th scope="col">Away Team</th>
-                                                <th scope="col">Home Team</th>
-                                                <th scope="col">Venue</th>
-                                            </tr>
-                                        </tbody>
-                                    </thead>
-                                </table>
-                            </div>
-                        </div>
 
                         <div id="gmap_display"></div>
 
