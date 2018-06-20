@@ -145,7 +145,7 @@ function createMarkers(results, status) {
             createMarker(results[i]);
         }
     } else if (status == google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
-        var box = bootbox.alert ("POI not available in a 546 yard radius. Please choose a different POI");
+        var box = bootbox.alert ("Tough luck! POI not available in a 546 yard radius. Please choose a different POI");
         box.find('.modal-content').css({ 'background-color': '#3CB371', 'font-size': '34px', 'line-height':'36px', 'height': '200px','color':'D3D3D3'}); 
         box.find(".btn-primary").removeClass("btn-primary").addClass("btn-danger");
     }
