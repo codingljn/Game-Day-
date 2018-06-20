@@ -70,10 +70,11 @@
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
                         <p>
-                            Planning a stress free day out at the ballpark can sometimes be challenging. What’s the weather going to be like? You won't find out here...we didn't use that API. What should
-                            I eat before I go? Are there good parking spots near the stadium? Let US help YOU plan your day
-                            efficiently so you can spend more time enjoying the things that matter the most….watching your
-                            favorite baseball team on a nice summer evening.</p>
+                            Planning a stress free day out at the ballpark can sometimes be challenging. What’s the weather going to be like? You won't
+                            find out here...we didn't use that API. What should I eat before I go? Are there good parking
+                            spots near the stadium? Let US help YOU plan your day efficiently so you can spend more time
+                            enjoying the things that matter the most….watching your favorite baseball team on a nice summer
+                            evening.</p>
                     </div>
                 </div>
             </div>
@@ -114,96 +115,104 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dateContainer">
-                        <p>Date:
-                            <input type="text" id="datepicker">
-                        </p>
-                    </div>
-                
-                    <div class="container">
-                        <h3>
-                            <b>Games Schedule</b>
-                        </h3>
-                        <div class="schedule">
-                            <table class="table table-striped text-center" id="scheduleTable">
-                                <thead>
-                                    <tbody class="gameInformation" id = "tableInfo">
-                                        <tr>
-                                            <th id = "gameDates" scope="col">Date</th>
-                                            <th id = "gameTimes" scope="col">Time</th>
-                                            <th scope="col">Away Team</th>
-                                            <th scope="col">Home Team</th>
-                                            <th scope="col">Venue</th>
-                                        </tr>
-                                    </tbody>
-                                </thead>
-                            </table>
-                        </div>
-                    </div>
-
-                <div class="row">
-                    <div class="col-2-lg">
-
-                        <div class="actions">
-                            <div>
-                                <label for="map_loc">Stadium:</label>
-                                <select id="map_loc" class="uk-select" type="text" name="map_loc">
-                                    <option value="Progressive Field">Cleveland, OH - Progressive Field</option>
-                                    <option value="Angel Stadium">Anaheim, CA - Angel Stadium</option>
-                                    <option value="Globe Life Park in Arlington">Arlington, TX - Globe Life Park</option>
-                                    <option value="Oriole Park at Camden Yards">Baltimore, MD - Oriole Park</option>
-                                    <option value="Fenway Park">Boston, MA - Fenway Park</option>
-                                    <option value="Yankee Stadium">Bronx, NY - Yankee Stadium</option>
-                                    <option value="Guaranteed Rate Field">Chicago, IL - Guaranteed Rate Field</option>
-                                    <option value="Wrigley Field">Chicago, IL - Wrigley Field</option>
-                                    <option value="Great American Ball Park">Cincinnati, OH - Great American Ball Park</option>
-                                    <option value="SunTrust Park">Cumberland, GA - SunTrust Park</option>
-                                    <option value="Coors Field">Denver, CO - Coors Field</option>
-                                    <option value="Comerica Park">Detroit, MI - Comerica Park</option>
-                                    <option value="Minute Maid Park">Houston, TX - Minute Maid Park</option>
-                                    <option value="Kauffman Stadium">Kansas City, KS - Kauffman Stadium</option>
-                                    <option value="Dodger Stadium">Los Angeles, CA - Dodger Stadium</option>
-                                    <option value="Marlins Park">Miami, FL - Marlins Park</option>
-                                    <option value="Miller Park">Milwaukee, WI - Miller Park</option>
-                                    <option value="Target Field">Minneapolis, MN - Target Field</option>
-                                    <option value="Oakland–Alameda County Coliseum">Oakland, CA - Alameda County Coliseum</option>
-                                    <option value="Citizens Bank Park">Philadelphia, PA - Citizens Bank Park</option>
-                                    <option value="Chase Field">Phoenix, AZ - Chase Field</option>
-                                    <option value="PNC Park">Pittsburgh, PA - PNC Park</option>
-                                    <option value="Citi Field">Queens, NY - Citi Field</option>
-                                    <option value="Petco Park">San Diego, CA - Petco Park</option>
-                                    <option value="AT&T Park">San Francisco, CA - AT&T Park</option>
-                                    <option value="Safeco Field">Seattle, WA - Safeco Field</option>
-                                    <option value="Busch Stadium">St. Louis, MS - Busch Stadium</option>
-                                    <option value="Tropicana Field">St. Petersburg, FL - Tropicana Field</option>
-                                    <option value="Rogers Centre">Toronto, ON - Rogers Centre</option>
-                                    <option value="Nationals Park">Washington, D.C. - Nationals Park</option>
-                                    <option value="Canal Park Stadium">Akron, OH - Canal Park</option>
-                                </select>
-                                <div id="button2" class="button">1) Find that Stadium</div>
-                                <div>
-                                    <label for="gmap_type">Type:</label>
-                                    <select id="gmap_type" class="uk-select">
-                                        <option value="parking">Parking</option>
-                                        <option value="atm">Atm</option>
-                                        <option value="bar">Bar</option>
-                                        <option value="cafe">Cafe</option>
-                                        <option value="restaurant">Food</option>
-                                        <option value="hospital">Medical</option>
-                                    </select>
-                                </div>
-
-                                <input type="hidden" id="lat" name="lat" value="41.4962" />
-                                <input type="hidden" id="lng" name="lng" value="-81.6852" />
-                                <div id="button1" class="button">2) Find Nearby</div>
+                    <div class="row">
+                        <div class="col-10-lg">
+                            <div class="dateContainer">
+                                <p>Date:
+                                    <input type="text" id="datepicker">
+                                </p>
                             </div>
 
+                            <div class="container">
+                                <h3>
+                                    <b>Games Schedule (+3 days from selected date)</b>
+                                </h3>
+                                <div class="schedule">
+                                    <table class="table table-striped text-center" id="scheduleTable">
+                                        <thead>
+                                            <tbody class="gameInformation" id="tableInfo">
+                                                <tr>
+                                                    <th id="gameDates" scope="col">Date</th>
+                                                    <th id="gameTimes" scope="col">Time</th>
+                                                    <th scope="col">Away Team</th>
+                                                    <th scope="col">Home Team</th>
+                                                    <th scope="col">Venue</th>
+                                                </tr>
+                                            </tbody>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2-lg">
+
+                            <div class="actions">
+                                <div>
+                                    <label for="map_loc">Stadium:</label>
+                                    <select id="map_loc" class="uk-select" type="text" name="map_loc">
+                                        <option value="Progressive Field">Cleveland, OH - Progressive Field</option>
+                                        <option value="Angel Stadium">Anaheim, CA - Angel Stadium</option>
+                                        <option value="Globe Life Park in Arlington">Arlington, TX - Globe Life Park</option>
+                                        <option value="Oriole Park at Camden Yards">Baltimore, MD - Oriole Park</option>
+                                        <option value="Fenway Park">Boston, MA - Fenway Park</option>
+                                        <option value="Yankee Stadium">Bronx, NY - Yankee Stadium</option>
+                                        <option value="Guaranteed Rate Field">Chicago, IL - Guaranteed Rate Field</option>
+                                        <option value="Wrigley Field">Chicago, IL - Wrigley Field</option>
+                                        <option value="Great American Ball Park">Cincinnati, OH - Great American Ball Park</option>
+                                        <option value="SunTrust Park">Cumberland, GA - SunTrust Park</option>
+                                        <option value="Coors Field">Denver, CO - Coors Field</option>
+                                        <option value="Comerica Park">Detroit, MI - Comerica Park</option>
+                                        <option value="Minute Maid Park">Houston, TX - Minute Maid Park</option>
+                                        <option value="Kauffman Stadium">Kansas City, KS - Kauffman Stadium</option>
+                                        <option value="Dodger Stadium">Los Angeles, CA - Dodger Stadium</option>
+                                        <option value="Marlins Park">Miami, FL - Marlins Park</option>
+                                        <option value="Miller Park">Milwaukee, WI - Miller Park</option>
+                                        <option value="Target Field">Minneapolis, MN - Target Field</option>
+                                        <option value="Oakland–Alameda County Coliseum">Oakland, CA - Alameda County Coliseum</option>
+                                        <option value="Citizens Bank Park">Philadelphia, PA - Citizens Bank Park</option>
+                                        <option value="Chase Field">Phoenix, AZ - Chase Field</option>
+                                        <option value="PNC Park">Pittsburgh, PA - PNC Park</option>
+                                        <option value="Citi Field">Queens, NY - Citi Field</option>
+                                        <option value="Petco Park">San Diego, CA - Petco Park</option>
+                                        <option value="AT&T Park">San Francisco, CA - AT&T Park</option>
+                                        <option value="Safeco Field">Seattle, WA - Safeco Field</option>
+                                        <option value="Busch Stadium">St. Louis, MS - Busch Stadium</option>
+                                        <option value="Tropicana Field">St. Petersburg, FL - Tropicana Field</option>
+                                        <option value="Rogers Centre">Toronto, ON - Rogers Centre</option>
+                                        <option value="Nationals Park">Washington, D.C. - Nationals Park</option>
+                                        <option value="Canal Park Stadium">Akron, OH - Canal Park</option>
+                                    </select>
+                                    <div id="button2" class="button">1) Find that Stadium</div>
+                                    <div>
+                                        <label for="gmap_type">Type:</label>
+                                        <select id="gmap_type" class="uk-select">
+                                            <option value="parking">Parking</option>
+                                            <option value="atm">Atm</option>
+                                            <option value="bar">Bar</option>
+                                            <option value="cafe">Cafe</option>
+                                            <option value="restaurant">Food</option>
+                                            <option value="hospital">Medical</option>
+                                        </select>
+                                    </div>
+
+                                    <input type="hidden" id="lat" name="lat" value="41.4962" />
+                                    <input type="hidden" id="lng" name="lng" value="-81.6852" />
+                                    <div id="button1" class="button">2) Find Nearby</div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-10-lg" class="map-responsive">
 
-                        <div id="gmap_display"></div>
+                    <div class="row">
+
+                        <div class="col-12-lg" class="map-responsive">
+
+                            <div id="gmap_display"></div>
+
+                        </div>
 
                     </div>
 
@@ -213,17 +222,15 @@
 
         </div>
 
-    </div>
-
-    <footer>
-        &copy;Homeplate 2018
-    </footer>
+        <footer>
+            &copy;Homeplate 2018
+        </footer>
 
 
 
-    <script src="assets/javascript/homeplate.js"></script>
+        <script src="assets/javascript/homeplate.js"></script>
 
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 

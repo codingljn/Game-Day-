@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     var datesArray = [];
-    length = 6;
+    length = 2;
 
     var date = $("#datepicker").datepicker();
 

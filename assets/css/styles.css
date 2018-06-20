@@ -6,7 +6,7 @@ html {
     }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Helvetica Neue",Arial,sans-serif;
     background: url("../images/stadium.png");
     background-size: 100% 100%;
     /* font-size: 16px;
@@ -131,6 +131,7 @@ footer {
     background-color: #FFFFFF;
     bottom: -80px;
     padding: 10px;
+    margin-left: 120px;
     /* position: absolute; 
     right: 250px; */
    
@@ -158,4 +159,13 @@ thead, tbody {
 tbody {
     height: 250px;
     overflow: auto;
+}
+
+.dateContainer {
+    margin-left: 15px;
+}
+
+p{
+    font-size: 20px;
+    color:#1e87f0;
 }
