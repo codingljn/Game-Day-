@@ -176,9 +176,9 @@ function createMarker(obj) {
     poi.push(infowindow);
 }
 
-// initialization
-google.maps.event.addDomListener(window, 'load', startMap);
 });
 
+// initialization
+google.maps.event.addDomListener(window, 'load', startMap);
 
 
