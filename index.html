@@ -36,6 +36,14 @@
     <!-- Firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 
+    <!-- Moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+
+    <!-- Date Selector-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 </head>
 
 <body>
@@ -170,6 +178,32 @@
 
 
                     <div class="col-10-lg" class="map-responsive">
+                        <div class="dateContainer">
+                            <p>Date:
+                                <input type="text" id="datepicker">
+                            </p>
+                        </div>
+                    
+                        <div class="container">
+                            <h3>
+                                <b>Games Schedule</b>
+                            </h3>
+                            <div class="schedule">
+                                <table class="table table-striped" id="scheduleTable">
+                                    <thead>
+                                        <tbody class="gameInformation" id = "tableInfo">
+                                            <tr>
+                                                <th id = "gameDates" scope="col">Date</th>
+                                                <th id = "gameTimes" scope="col">Time</th>
+                                                <th scope="col">Away Team</th>
+                                                <th scope="col">Home Team</th>
+                                                <th scope="col">Venue</th>
+                                            </tr>
+                                        </tbody>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
 
                         <div id="gmap_display"></div>
 
@@ -190,6 +224,8 @@
 
 
     <script src="assets/javascript/homeplate.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 

@@ -148,3 +148,14 @@ icon {
     height: 10px;
     width: 10px;
 }
+
+/* Game Schedule Table */
+
+thead, tbody {
+    display: block;
+}
+
+tbody {
+    height: 250px;
+    overflow: auto;
+}
