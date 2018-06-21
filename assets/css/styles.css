@@ -38,26 +38,27 @@ header {
     width: 70%;
 }
 
-form {
-    margin-left: 20px;
-}
-
-.right {
-    float: right;
+#scheduleTable {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #gmap_display {
-    margin-left: 10px;
-    width: 775px;
+    display: block;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    width: 1100px;
     height: 600px;
 }
 
 @media screen and (max-width: 1200px) {
     #gmap_display{
-        width: 885px;
+        width: 900px;
         height: 600px;
         display: block;
-        margin-right: 15px;
         margin-bottom: 15px;
     }
  }
@@ -67,7 +68,6 @@ form {
         width: 685px;
         height: 600px;
         display: block;
-        margin-right: 15px;
         margin-bottom: 15px;
     }
  }
@@ -77,7 +77,6 @@ form {
         width: 510px;
         height: 600px;
         display: block;
-        margin-right: 15px;
         margin-bottom: 15px;
     }
  }
@@ -110,36 +109,46 @@ footer {
 /* ======= Button Styles ======= */
 
 .button {
-    border: 2px solid #4CAF50;
+    border: 2px solid #1a7cee;
     margin: 10px 0px;
     padding: 8px 18px;
     background-color: white;
-    color: #4CAF50;
+    color: #1a7cee;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 264px;
+    width: 100%;
  }
  
  .button:hover {
-    background-color: #4CAF50;
+    background-color: #1a7cee;
     color: white;
  }
 
 .actions {
     background-color: #FFFFFF;
-    bottom: -80px;
-    padding: 10px;
-    margin-left: 120px;
-    /* position: absolute; 
-    right: 250px; */
-   
+    margin-left: 24px;
+    margin-top: 100px;
 }
+
+@media screen and (max-width: 1199px) {
+    .actions{
+       margin-left: 24px;
+       margin-top: 15px;
+    }
+ }
+    
+
 .actions label {
     display: block;
     margin: 2px 0 5px 10px;
     text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1a7cee;
+    font-size: 18px;
+}
+
 }a
 .actions input, .actions select {
     width: 85%;

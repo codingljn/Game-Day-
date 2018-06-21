@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     var datesArray = [];
     length = 2;
 
